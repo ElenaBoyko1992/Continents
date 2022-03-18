@@ -1,0 +1,129 @@
+.footer {
+    width: 100%;
+
+    // .footer__content
+
+    &__content {
+        display: flex;
+        @media (max-width: $md1) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    // .footer__left-block
+
+    &__left-block {
+        @media (min-width: $md1) {
+            flex: 0 0 47%;
+        }
+    }
+
+    // .footer__right-block
+
+    &__right-block {
+        background: url(../img/block_4/background1.jpg) top / cover no-repeat;
+        @media (min-width: $md1) {
+            flex: 0 0 53%;
+        }
+    }
+}
+.left-footer {
+    @media (max-width: $md1) {
+        height: 300px;
+    }
+    // .left-footer__map
+    &__map {
+        width: 100%;
+        height: 100%;
+           iframe {
+            width: 100%;
+            height: 100%;
+           }
+        
+    }
+}
+.right-footer {
+    padding: 100px;
+    @media (max-width: $md1) {
+        padding: 20px;
+    }
+	// .right-footer__title
+
+	&__title {
+        margin: 0px 0px 70px 0px;
+        line-height: 1.2;
+        text-align: left;
+        max-width: 570px;
+        @media (max-width: $md1) {
+            margin: 0px 0px 30px 0px;
+        }
+	}
+
+	// .right-footer__address
+
+	&__address {
+        font-size: 18px;
+        line-height: 1.2;
+        font-weight: 400;
+        margin: 0px 0px 40px 0px;
+        @media (max-width: $md1) {
+            margin: 0px 0px 20px 0px;
+        }
+	}
+
+	// .right-footer__time
+
+	&__time {
+        font-size: 18px;
+        line-height: 1.2;
+        font-weight: 400;
+        margin: 0px 0px 40px 0px;
+        span {
+        font-size: 15px;
+        color: #007ca5;
+        display: block;
+        margin: 0px 0px 20px 0px;
+        }
+        @media (max-width: $md1) {
+            margin: 0px 0px 20px 0px;
+        }
+	}
+
+	// .right-footer__contacts
+
+	&__contacts {
+        font-size: 18px;
+        line-height: 1.2;
+        font-weight: 700;
+        margin: 0px 0px 40px 0px;
+        span {
+            font-size: 15px;
+            font-weight: 400;
+            color: #007ca5;
+            display: block;
+            margin: 0px 0px 20px 0px;
+        }
+        @media (max-width: $md1) {
+            margin: 0px 0px 20px 0px;
+        }
+	}
+
+	// .right-footer__mail
+
+	&__mail {
+        font-size: 18px;
+        line-height: 1.2;
+        font-weight: 400;
+        a {
+            text-decoration: underline;
+            color: #001e28;
+        }
+        p {
+            margin: 0px 0px 25px 0px;
+            &:last-child {
+               margin: 0px 0px 0px 0px;
+            }
+        }
+	}
+
+}
